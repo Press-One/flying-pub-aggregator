@@ -20,7 +20,7 @@
 
 进入 `flying-pub-aggregator` 仓库
 
-打开 `config/Settings.toml`，添加你想要聚合的站点（配置中已经有 3 个站点作为例子）
+打开 `config/Settings.toml`，添加你想要聚合的站点（配置中已经有 3 个站点作为例子，可以直接启动服务，查看聚合下来的数据）
 
 站点字段解释：
 

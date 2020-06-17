@@ -36,8 +36,11 @@
 
 ### 访问数据
 
-文章列表：`http://localhost:7070/json_posts?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&limit=10&offset=0`
-作者列表：`http://localhost:7070/users?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&limit=10&offset=0`
+文章列表
+http://localhost:7070/json_posts?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&limit=10&offset=0
+
+作者列表
+http://localhost:7070/users?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&limit=10&offset=0
 
 你可以根据 `config/Settings.toml` 中 3 个站点的 topic，使用 api 查看他们的作者和文章数据
 

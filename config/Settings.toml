@@ -11,12 +11,6 @@ topic = "a06d94c3c6a50c5893f366148bc863dec4d4d676"
 encryption_key = "daf786d6738c2b44a3f884f23fcf68db99103128241bcbc0345d1660155c8d5b"
 iv_prefix = "5b52d68fefc1f24d4ee8cd8d23dff9a6d21742ff7cd2fcacbd7e8679f41051a2"
 
-# 站点字段解释：
-# - name: 站点名称
-# - topic: 站点的 topic
-# - encryption_key: 加密用的 encryption_key，站点内容都是加密的，聚合之前需要解密，然后再把原文存到聚合数据库
-# - iv_prefix: 加密用的 iv_prefix，站点内容都是加密的，聚合之前需要解密，然后再把原文存到聚合数据库
-
 [[topics]]
 name = "xue"
 topic = "b6b17424f87ffb8b5b853291f6dbaf0aac661ca2"

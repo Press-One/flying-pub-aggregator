@@ -20,10 +20,6 @@
 
 进入 `flying-pub-aggregator` 仓库
 
-```
-cd flying-pub-aggregator
-```
-
 打开 `config/Settings.toml`，添加你想要聚合的站点（配置中已经有 3 个站点作为例子）
 
 如果你想要添加一个站点，那么就是加一个站点配置
@@ -40,7 +36,9 @@ cd flying-pub-aggregator
 
 ### 访问数据
 
-文章列表：`http://localhost:7070/json_posts?topic=b6b17424f87ffb8b5b853291f6dbaf0aac661ca2&limit=10&offset=0`
-作者列表：`http://localhost:7070/users?topic=b6b17424f87ffb8b5b853291f6dbaf0aac661ca2&limit=10&offset=0`
+文章列表：`http://localhost:7070/json_posts?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&limit=10&offset=0`
+作者列表：`http://localhost:7070/users?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&limit=10&offset=0`
+
+你可以根据 `config/Settings.toml` 中 3 个站点的 topic，使用 api 查看他们的作者和文章数据
 
 你根据这两个 api，把作者和文章的数据，灌到你聚合站点的数据库里面，然后根据你想要的方式，把数据展示出来

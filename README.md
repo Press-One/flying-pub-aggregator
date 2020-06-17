@@ -36,12 +36,30 @@
 
 ### 访问数据
 
-文章列表
-http://localhost:7070/json_posts?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&offset=0&limit=10
-
 作者列表
 http://localhost:7070/users?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&offset=0&limit=10
+
+文章列表
+http://localhost:7070/json_posts?topic=a06d94c3c6a50c5893f366148bc863dec4d4d676&offset=0&limit=10
 
 你可以根据 `config/Settings.toml` 中 3 个站点的 topic，使用 api 查看他们的作者和文章数据
 
 你根据这两个 api，把作者和文章的数据，灌到你聚合站点的数据库里面，然后根据你想要的方式，把数据展示出来
+
+### 作者 API 字段解释
+
+- **user_address**: 用户地址
+- **status**: 用户状态，如果是 `allow`，说明这个用户可以显示，Ta 的文章也可以显示，如果是 `deny`，说明这个用户被禁止显示，Ta 的文章也不应该显示出来
+- **tx_id**: 用户状态所属的区块 id
+- **updated_at**: 更新时间
+- **topic**: 用户所属的 topic
+
+### 文章 API 字段解释
+
+- **publish_tx_id**: 这篇文章的区块 id
+- **file_hash**: 文章 hash
+- **topic**: 文章所属的 topic
+- **updated_tx_id**: 区块链不支持删除，只允许覆盖更新，如果这个字段不为空，说明这篇文章覆盖了另外一篇旧文章，这个 id 就是指向那篇旧文章的区块 id
+- **updated_at**: 更新时间
+- **deleted**: 是否被删除了
+- **content**: 文章内容

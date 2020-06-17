@@ -1,6 +1,6 @@
 聚合站就是把多个[飞帖站点](https://github.com/Press-One/flying-pub)的内容聚合到一个地方。
 
-用 RSS 做类比，飞帖站点就是一个 RSS 源，聚合站就是一个 RSS 聚合器，比如 https://feedly.com，你可以把自己感兴趣的 RSS 源汇总到一个地方，从而掌控了自己的信息来源。
+用 RSS 做类比，飞帖站点就是一个 RSS 源，聚合站就是一个 RSS 聚合器，你可以把自己感兴趣的 RSS 源汇总到一个地方，从而掌控了自己的信息来源。
 
 ![](https://img-cdn.xue.cn/616-Xnip2020-06-16_13-33-39.jpg)
 
